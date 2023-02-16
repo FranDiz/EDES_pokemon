@@ -1,3 +1,6 @@
+package POKEMON
+
+
 class Ataque (nombre:String, tipo:String, fuerza:Int) {
     var fuerza:Int = 0
         set(value){
@@ -7,9 +10,10 @@ class Ataque (nombre:String, tipo:String, fuerza:Int) {
             field = value
         }
     var nombre:String = ""
-    var tipo:String = ""
+    var tipo=Tipo(tipo)
+
 
     override fun toString(): String {
-        return "$nombre de tipo $tipo hizo $fuerza de daño"
+        return "$nombre de tipo ${Tipo(tipo.toString())} hizo $fuerza de daño"
     }
 }

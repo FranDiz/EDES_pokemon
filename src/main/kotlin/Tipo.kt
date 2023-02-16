@@ -1,3 +1,5 @@
+package POKEMON
+
 import java.lang.IllegalArgumentException
 
 class Tipo(tipo:String) {

@@ -1,3 +1,5 @@
+package POKEMON
+
 class Pokemon (id:Int, nombre:String, vida:Int, tipo:String, tipoAtaca:String) {
 
     var id: Int=0
