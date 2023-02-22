@@ -12,7 +12,16 @@ class Tipo(tipo:String) {
                 throw IllegalArgumentException("El tipo no es válido"); field = ""
             }
             else {
-                field=value
+                field = value
             }
         }
+    fun Efectividad(tipoAtaca:String) {
+        return when(tipo){
+            "acero"-> when(tipoAtaca){
+                "fuego","lucha","tierra"
+            }
+
+        }
+    }
 }
+
